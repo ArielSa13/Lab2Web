@@ -6,6 +6,7 @@
   <img src="sintax/web.png">
 
 - Syntax di bawah adalah sebuah formulir HTML dengan tiga elemen input yaitu Nama, Tanggal Lahir, dan Pekerjaan, dan sebuah tombol Submit.
+
   ```
   <h2>Form Input</h2>
     <form method="post">
@@ -22,21 +23,18 @@
         <input type="submit" value="Submit">
     </form>
   ```
-  
 
 - Syntax di bawah adalah kode PHP yang digunakan untuk mengambil nilai dari input form yang telah dikirim oleh pengguna setelah tombol submit ditekan.
 
 ```
 //ambil nilai dari input form
-    $nama = $_POST["nama"]; 
+    $nama = $_POST["nama"];
     $tgl_lahir = $_POST["tgl_lahir"];
-    $pekerjaan = $_POST["pekerjaan"]; 
-    
+    $pekerjaan = $_POST["pekerjaan"];
+
 ```
- 
 
 - Syntax di bawah adalah kode PHP yang digunakan untuk menghitung umur seseorang berdasarkan tanggal lahir yang telah diisi oleh pengguna pada formulir input sebelumnya.
-
 
   ```
   // hitung umur berdasarkan tanggal lahir
@@ -72,4 +70,3 @@
     echo "Gaji: Rp " . number_format($gaji, 0, ".", ".") . " /Bulan", "<br>";
 
   ```
-
