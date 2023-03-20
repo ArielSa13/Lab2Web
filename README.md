@@ -7,7 +7,7 @@
 
 - Syntax di bawah adalah sebuah formulir HTML dengan tiga elemen input yaitu Nama, Tanggal Lahir, dan Pekerjaan, dan sebuah tombol Submit.
 
-  ```
+  ```html
   <h2>Form Input</h2>
     <form method="post">
         <label for="nama">Nama:</label>
@@ -26,7 +26,7 @@
 
 - Syntax di bawah adalah kode PHP yang digunakan untuk mengambil nilai dari input form yang telah dikirim oleh pengguna setelah tombol submit ditekan.
 
-```
+```php
 //ambil nilai dari input form
     $nama = $_POST["nama"];
     $tgl_lahir = $_POST["tgl_lahir"];
@@ -36,7 +36,7 @@
 
 - Syntax di bawah adalah kode PHP yang digunakan untuk menghitung umur seseorang berdasarkan tanggal lahir yang telah diisi oleh pengguna pada formulir input sebelumnya.
 
-  ```
+  ```php
   // hitung umur berdasarkan tanggal lahir
     $today = new DateTime();
     $birthdate = new DateTime($tgl_lahir);
